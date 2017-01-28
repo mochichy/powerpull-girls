@@ -7,7 +7,7 @@ var SignUp = React.createClass({
                 <div className="signUpPage">
                 <div className="signUpArea">
                 <div className="signTitle">
-                    <h1>Rate My Classes</h1>
+                    <h1>Good Deeds</h1>
                     <h4>Sign up for an Account</h4>
                 </div>
                 <form onSubmit={this.props.submit} className="col s7 authenticate" id="sign-up">
@@ -22,7 +22,7 @@ var SignUp = React.createClass({
                         </div>
                         <div className="input-field col s7 offset-s3">
                             <input type="text" id="displayName" className="validate" />
-                            <label htmlFor="displayName">Display Name</label>
+                            <label htmlFor="displayName">Company Name</label>
                         </div>
                     </div>
                     <div className="signBtn">

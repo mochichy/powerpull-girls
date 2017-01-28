@@ -6,6 +6,8 @@ import ToggleAuth from './ToggleAuth';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
 import SignOut from './SignOut';
+import DashBoard from './dashboard.js';
+import RequestForm from './request-form';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import { Router, hashHistory } from 'react-router';
@@ -23,6 +25,8 @@ var HomePage = React.createClass({
 	},
 
 	componentDidMount(){
+         
+
 		var self = this;
 
 		if (firebase.apps.length === 0) {
@@ -41,7 +45,7 @@ var HomePage = React.createClass({
 	            this.setState({checked:true})
 	        });
 			
-		} 
+		}
 
 	},
 
@@ -101,7 +105,23 @@ var HomePage = React.createClass({
         this.setState({authOption:option});
     },
 
+    createRequest(event){
+        event.preventDefault();
+        //this.setState({reviewed:!this.state.reviewed});
+        //console.log(this.state.reviewed);
 
+        let isRequest = {
+            //company:this.props.companyName,
+            item:event.target.elements['item'].value,
+            quantityNeeded:event.target.elements['quantity'].value,
+            stock:event.target.elements['stock'].value,
+            date:event.target.elements['date'].value
+        };
+
+        this.requestRef.push(isRequest);
+        event.target.reset();
+
+    },
 
 
 	render(){
@@ -127,7 +147,10 @@ var HomePage = React.createClass({
                 	}
 
                 	{this.state.user &&
-	                    <SignOut submit={this.signOut}/>
+                        <div>
+	                       <SignOut submit={this.signOut}/>
+
+                        </div>
 	                      
          			}
 
@@ -135,6 +158,7 @@ var HomePage = React.createClass({
 
 
                 	<div className="mainPage">
+                        <DashBoard/>
 	                	<div className="searchArea">
 	                		<p>test</p>
 

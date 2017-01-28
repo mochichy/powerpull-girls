@@ -1,9 +1,4 @@
 .mainPage {
-	background-image: linear-gradient(rgba(246, 244, 251, 0.5), rgba(246, 244, 251, 0.5)),
-	url(../imgs/uwcamp.jpg);
-	background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
 	min-height: 93vh;
 	margin-top: -45px;
 	margin-bottom: -15px;

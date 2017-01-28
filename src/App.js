@@ -2,7 +2,6 @@ import React from 'react';
 import './css/App.css';
 import firebase from 'firebase';
 import { Link } from 'react-router';
-import Menu from 'react-motion-menu';
 import '../node_modules/font-awesome/css/font-awesome.css'
 
 
