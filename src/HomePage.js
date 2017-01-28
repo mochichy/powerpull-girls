@@ -10,13 +10,13 @@ import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import { Router, hashHistory } from 'react-router';
 import About from './About';
+import Users from './Users';
 
 var HomePage = React.createClass({
 	getInitialState(){
 		
 		return{data:[], searchString:'', targetCourse:[], checked:false, 
-			   user:null, authOption:'sign-in', hasCourse:false, hasResult:true,
-			   showCourses:false
+			   user:null, authOption:'sign-in'
 
 
 			}
@@ -116,7 +116,8 @@ var HomePage = React.createClass({
         }
 		return(
 				<div>
-				<About/>
+
+				<Users/>
 
 					{!this.state.user &&
 	                    <div>
@@ -130,11 +131,13 @@ var HomePage = React.createClass({
 	                      
          			}
 
-                	{this.state.user && !this.state.hasCourse &&
+                	{this.state.user &&
+
 
                 	<div className="mainPage">
 	                	<div className="searchArea">
 	                		<p>test</p>
+
 
 						</div>
 					</div>

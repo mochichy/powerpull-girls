@@ -1,9 +1,9 @@
 // Store firebase configuration
 var FirebaseConfig = {
-	apiKey: "AIzaSyCz6f1kqjRzoygXW81sSBwNURdbRLs0Pqc",
-    authDomain: "ratemyclass-194f8.firebaseapp.com",
-    databaseURL: "https://ratemyclass-194f8.firebaseio.com",
-    storageBucket: "ratemyclass-194f8.appspot.com",
-    messagingSenderId: "830134366926"        
+    apiKey: "AIzaSyABBOrAQh3RBMm4R0smjpcWvfvwe0UvNww",
+    authDomain: "powerpuff-girl.firebaseapp.com",
+    databaseURL: "https://powerpuff-girl.firebaseio.com",
+    storageBucket: "powerpuff-girl.appspot.com",
+    messagingSenderId: "1019549910069"    
 };
 export default FirebaseConfig;
