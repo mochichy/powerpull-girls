@@ -1,1 +1,1 @@
-# powerpull-girls
+# Team6 Final Project

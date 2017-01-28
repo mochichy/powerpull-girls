@@ -1,0 +1,17 @@
+.reviewSec {
+	background: rgba(86, 51, 154, 0.1);
+	border: 1px dotted #56339a;
+	margin: 10px 10px;
+	position: relative;
+	padding: 10px 20px;
+}
+
+.reviewSec hr {
+	height: 1px;
+	background-color: #56339a;
+}
+
+.date {
+	float: right;
+	margin-top: -40px;
+}

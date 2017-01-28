@@ -1,0 +1,128 @@
+.mainPage {
+	background-image: linear-gradient(rgba(246, 244, 251, 0.5), rgba(246, 244, 251, 0.5)),
+	url(../imgs/uwcamp.jpg);
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+	min-height: 93vh;
+	margin-top: -45px;
+	margin-bottom: -15px;
+}
+
+.searchArea {
+	background: rgba(0, 0, 0, 0.7);
+	margin: auto;
+	position: relative;
+	top: 100px;
+	padding-bottom: 30px;
+	width: 90%;
+}
+
+.title {
+	text-align: center;
+	padding-top: 30px;
+	margin-bottom: 50px;
+	color: white;
+}
+
+.searchArea input[type="text"] {
+	border: 1px solid white;
+	border-radius: 30px;
+	width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+
+.searchArea input[type="text"]:focus {
+    border: 1px solid white;
+}
+
+.searchBar {
+	margin-left: 90px;
+	margin-bottom: 20px;
+}
+
+.searchCourse {
+	margin-left: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+  	color: white;
+  	background-color: #56339a;
+  	border: none;
+  	border-radius: 3px;
+  	padding: 5px 20px;
+}
+
+button[type="submit"] {
+	background-color: #56339a;
+}
+
+button[type="submit"]:hover {
+	background-color: #362061;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24);
+}
+
+.searchArea .no-result {
+	color: white;
+	background-color: #ff4d4d;
+	text-align: center;
+}
+
+.searchClass {
+		margin: 0 auto;
+		width: 60%;
+	}
+
+	.searchClass input[type="text"] {
+		border: 1px solid black;
+		border-radius: 30px;
+	    text-align: center;
+	    background-color: white;
+	    margin-top: -12px;
+	}
+
+	.searchClass input[type="text"]:focus {
+	    border: 1px solid black;
+	}
+
+	.bar {
+		padding-left: 20px;
+		border-bottom: 1px solid black;
+	}
+
+	.searchClass .searchCourse {
+		display: table;
+	    margin: 0 auto;
+	    margin-bottom: 15px;
+	}
+
+	.coursePage .no-result {
+		color: white;
+		background-color: #ff4d4d;
+		text-align: center;
+		margin: 0 auto;
+		width: 15%;
+		margin-top: 15px;
+	}
+
+	hr {
+		height: 2px;
+		background-color: #c0ade4;
+		border: none;
+	}
+
+@media screen and (min-width:600px) {
+
+	.searchArea {
+		width: 540px;
+	}
+
+	.searchArea .no-result {
+		margin-left: 150px;
+		margin-right: 230px;
+	}
+
+	
+}
